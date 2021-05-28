@@ -16,6 +16,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: log
+        run: echo ${{ github.actor }}
+        
       - name: Close Pull
         uses: peter-evans/close-pull@v1
         with:
